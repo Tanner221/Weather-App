@@ -1,4 +1,4 @@
-import requests, json
+import requests, json, password
 
 def askName():
   name = input("City Name: ")
@@ -43,8 +43,8 @@ def printResponse(response):
   else:
     print("ERROR: City Name does not exist")
 
-url = "https://api.openweathermap.org/data/2.5/weather?q="
-id = "&APPID=99dc145ca804a66e01803857e7e9b497"
+from password import *
+
 print("\nWelcome to the Weather App! Please Enter the City name to find its current outdoor temperature\n")
 cityName = askName()
 cityName = processName(cityName)
