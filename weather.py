@@ -41,7 +41,7 @@ def printResponse(response):
     print(f"Humidity: {humidity}%")
     print(f"Visibility: {visibility} feet")
   else:
-    print("ERROR: City Name does not exist")
+    print("ERROR: City Name not Found")
 
 from password import *
 
